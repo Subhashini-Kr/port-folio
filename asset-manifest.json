@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Port_Folio/static/css/main.93980844.css",
+    "main.js": "/Port_Folio/static/js/main.c4179381.js",
+    "static/js/787.2e9b76fa.chunk.js": "/Port_Folio/static/js/787.2e9b76fa.chunk.js",
+    "static/media/contactPic.png": "/Port_Folio/static/media/contactPic.30e9a83ea09ef37af046.png",
+    "static/media/subbu.png": "/Port_Folio/static/media/subbu.a8b387aed9db1f258fa8.png",
+    "static/media/stars4.png": "/Port_Folio/static/media/stars4.2fd03adddb76d31c7580.png",
+    "static/media/stars2.png": "/Port_Folio/static/media/stars2.71cb0c65a79845cdc1cd.png",
+    "static/media/stars3.png": "/Port_Folio/static/media/stars3.4b6f7a8bcc67ac3f12b3.png",
+    "static/media/bmrc.png": "/Port_Folio/static/media/bmrc.a1cf074c4f8b9d61749f.png",
+    "static/media/stars5.png": "/Port_Folio/static/media/stars5.d0408b0580a7f3559170.png",
+    "static/media/stars1.png": "/Port_Folio/static/media/stars1.01ec4d847d4e3435e79f.png",
+    "static/media/ohio.png": "/Port_Folio/static/media/ohio.18dc0648ffe28226b14c.png",
+    "index.html": "/Port_Folio/index.html",
+    "main.93980844.css.map": "/Port_Folio/static/css/main.93980844.css.map",
+    "main.c4179381.js.map": "/Port_Folio/static/js/main.c4179381.js.map",
+    "787.2e9b76fa.chunk.js.map": "/Port_Folio/static/js/787.2e9b76fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93980844.css",
+    "static/js/main.c4179381.js"
+  ]
+}
