@@ -1,0 +1,113 @@
+.aboutDesc{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+}
+.aboutPic{
+    overflow: hidden;
+    height:30vw;
+    min-width: 18vw;
+    border-radius: 50%;
+    position: relative;
+    right:-40px;
+    background: #e0e0e0;
+    box-shadow: inset 25px 25px 35px #272727,
+                inset -25px -25px 35px #242424;
+    border: 2px solid #e5244a;
+    outline: 4px solid #f75e7d;
+    background: transparent;
+    outline-offset: 5px;
+}
+.aboutPic img{
+    height:30vw;
+    position: relative;
+    top: 0vw;
+    left: 3vw;
+    opacity: 10;
+}
+.aboutText{
+    display: flex;
+    flex-direction: column;
+}
+.aboutHead{
+    display: flex;
+    position: relative;
+    left:0;
+    align-items: center;
+}
+.aboutHeadA{
+    text-shadow: 5px 5px gray;
+    font-size: 100px;
+    font-weight: bold;
+}
+.aboutHeadTitle{
+    text-shadow: 2px 2px gray;
+    font-size: 40px;
+    font-weight: bold;
+}
+.aboutBody{
+    max-width:600px;
+    font-size: 20px;
+    padding-left: 60px;
+}
+.aboutSliderOuter{
+
+    width: 94vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 3vw;
+}
+.aboutSlider{
+    width:1000px;
+    margin-top:50px;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:1000px){
+    .aboutHead{
+        justify-content: center;
+    left: unset;
+    }
+    .aboutHeadA {
+        text-shadow: 4px 3px grey;
+        font-size: 70px;
+    }
+    .aboutHeadTitle{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:780px){
+    .aboutBody{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:625px){
+    .aboutDesc {
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+    .aboutBody{
+        padding-left: 0;
+    }
+    .aboutPic img{
+        height:233px;
+        left: -3%;
+    }
+    .aboutPic{
+        min-height:175px;
+    }
+}
+@media only screen and (max-width:553px) {
+    .aboutSlider{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,236 @@
+/* <div className="devicesDiv">
+<div className="phoneDiv">
+  <Phone />
+</div>
+<div className="laptopDiv">
+  <Laptop />
+</div>
+<div className="tabletDiv">
+  <Tablet />
+</div>
+</div>
+<div className="textProjects">
+<p>Project Name</p>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Voluptate, accusantium veniam! Quaerat beatae perspiciatis
+  voluptas.
+</p>
+</div> */
+
+  .textProjects{
+    z-index: 5;
+    /* position: absolute; */
+  }
+  .devicesDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectsOuter{
+    height:fit-content;
+    width:100%;
+    background: transparent;
+    /* background-color: rgb(180, 65, 65); */
+    color: white;
+    margin: 50px 0;
+  }
+  .projects-tabs{
+    position: relative;
+    width: 85vw;
+    height:fit-content;
+    padding: 30px 20px;
+    margin: auto;
+    background: transparent;
+    overflow: hidden;
+    box-shadow: 0 0 15px 0 rgb(190 190 190);
+}
+  .projects-tabs .projects-header{
+    float:left;
+    width: 180px;
+    height: 70%;
+    padding:50px 0;
+  }
+  .projects-tabs .projects-header div{
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  .projects-tabs .projects-header div:hover,.projects-tabs .projects-header div.active{
+    color:rgb(112, 106, 106);
+    display: block;
+  }
+  .projects-tabs .projects-header div i{
+    display: inline-block;
+    width: 25px;
+  }
+  text-white{
+    color:white;
+  }
+  .projects-content{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  .projects-content .active2{
+    display: block;
+    border-left: 2px solid white;
+    top:0;
+  }
+  .projects-content {
+    /* display: none; */
+    position: relative;
+    text-align: center;
+    border-left: 1px solid white;
+    padding: 10px;
+    padding-right: 0;
+    top:-100%;
+    transition: all 500ms ease-in-out;
+  }
+  .projects-content>div i{
+    display: inline-block;
+    padding: 10px;
+    background: #ffbe00;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10%;
+  }
+  .projects-content>div h2{
+    margin-top: 8px;
+  }
+  .project-indicator{
+
+    position: absolute;
+    background-color: transparent;
+
+    /* width: 5px;
+    height: 50px;
+    left: 197px;
+    transition: all 500ms ease-in-out; */
+  }
+
+  .projectsDropbtn {
+    background: linear-gradient(to left, #010118 0%, #3c3369 100%);
+    border-radius: 10px;
+    color: #97a0ed;
+    font-weight: 600;
+    box-shadow: 2px 2px gray;
+    padding: 8px 16px;
+    width: 90%;
+    border: none;
+  }
+  
+  .projectsDropdown {
+    position: relative;
+    display: block;
+  }
+  
+  .projectsDropdown-content {
+    display: none;
+    margin: 0 8% 0 5%;
+    position: absolute;
+    width: -webkit-fill-available;
+    background-color: #181818;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+    .showProjects {
+      display: block;
+    }
+  
+  .projectsDropdown-content .dropopt {
+    color: #9a91dd;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: none;
+    box-shadow: 1px 1px #7676c0;
+    margin-bottom: 1px;
+    background: #000008;
+    border-radius: 5px;
+  }
+  
+  .projectsDropdown-content .dropopt:hover {background-color: #000012;}
+  
+  /* .dropdown:hover .dropdown-content {display: block;} */
+  
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width:1000px){
+    .devicesDiv{
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width:850px){
+    .projects-content h2 {
+      font-size: 1.1rem;
+    }
+    .projects-tabs .projects-header {
+      width: 125px;
+    }
+    .projects-tabs .projects-header div {
+      font-size: 12px;
+    }
+    .project-indicator{
+      left:140px;
+    }
+  }
+  @media only screen and (max-width:625px){
+    .projects-content h2 {
+      font-size: 14px;
+    }
+    .textProjects p, .dropopt{
+      font-size: 10px;
+    }
+    .projects-tabs .projects-header{
+      padding: 0;
+    }
+    .projects-tabs .projects-header div{
+      line-height: normal;
+      height: 30px;
+    }
+  }
+  @media only screen and (max-width:400px){
+    .projects-tabs{
+      padding: 30px 10px;
+      margin: 0 10px;
+    }
+    .projects-content>div i{
+      padding: 5px;
+    }
+    .projects-content h2, .projectsDropbtn {
+      font-size: 9px;
+    }
+    .projects-tabs .projects-header {
+      width: 80px;
+    }
+    .projects-tabs .projects-header div {
+      font-size: 10px;
+    }
+    .project-indicator{
+      left:95px;
+    }
+    .textProjects p, .dropopt{
+      font-size: 8px;
+    }
+    .projects-tabs .projects-header div {
+      padding-left: 0;
+    }
+  }

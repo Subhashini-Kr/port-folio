@@ -1,0 +1,245 @@
+.contactForm{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:3vw 8vw;
+}
+.contactFormSmiley{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    background: none;
+  }
+  .contactWrapper{
+    background: none;
+    max-width: 360px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  .contactWrapper .contactContent{
+    padding: 30px;
+    width:300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contactWrapper .contactOuter{
+    height: 135px;
+    width: 135px;
+    overflow: hidden;
+  }
+  .contactOuter .contactEmojis{
+    height: 500%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactOuter .contactEmojis li{
+    height: 20%;
+    width: 100%;
+    list-style: none;
+    transition: all 0.3s ease;
+  }
+  .contactOuter li img{
+    /* height: 100%; */
+    width: 100%;
+  }
+  #star-2:checked ~ .contactContent .contactEmojis .slideImg{
+    margin-top: -135px;
+  }
+  #star-3:checked ~ .contactContent .contactEmojis .slideImg{
+    margin-top: -270px;
+  }
+  #star-4:checked ~ .contactContent .contactEmojis .slideImg{
+    margin-top: -405px;
+  }
+  #star-5:checked ~ .contactContent .contactEmojis .slideImg{
+    margin-top: -540px;
+  }
+  .contactWrapper .contactStars{
+    margin-top: 30px;
+  }
+  .contactStars label{
+    font-size: 30px;
+    margin: 0 3px;
+    color: #ccc;
+  }
+  #star-1:hover ~ .contactContent .contactStars .star-1,
+  #star-1:checked ~ .contactContent .contactStars .star-1,
+  #star-2:hover ~ .contactContent .contactStars .star-1,
+  #star-2:hover ~ .contactContent .contactStars .star-2,
+  #star-2:checked ~ .contactContent .contactStars .star-1,
+  #star-2:checked ~ .contactContent .contactStars .star-2,
+  #star-3:hover ~ .contactContent .contactStars .star-1,
+  #star-3:hover ~ .contactContent .contactStars .star-2,
+  #star-3:hover ~ .contactContent .contactStars .star-3,
+  #star-3:checked ~ .contactContent .contactStars .star-1,
+  #star-3:checked ~ .contactContent .contactStars .star-2,
+  #star-3:checked ~ .contactContent .contactStars .star-3,
+  #star-4:hover ~ .contactContent .contactStars .star-1,
+  #star-4:hover ~ .contactContent .contactStars .star-2,
+  #star-4:hover ~ .contactContent .contactStars .star-3,
+  #star-4:hover ~ .contactContent .contactStars .star-4,
+  #star-4:checked ~ .contactContent .contactStars .star-1,
+  #star-4:checked ~ .contactContent .contactStars .star-2,
+  #star-4:checked ~ .contactContent .contactStars .star-3,
+  #star-4:checked ~ .contactContent .contactStars .star-4,
+  #star-5:hover ~ .contactContent .contactStars .star-1,
+  #star-5:hover ~ .contactContent .contactStars .star-2,
+  #star-5:hover ~ .contactContent .contactStars .star-3,
+  #star-5:hover ~ .contactContent .contactStars .star-4,
+  #star-5:hover ~ .contactContent .contactStars .star-5,
+  #star-5:checked ~ .contactContent .contactStars .star-1,
+  #star-5:checked ~ .contactContent .contactStars .star-2,
+  #star-5:checked ~ .contactContent .contactStars .star-3,
+  #star-5:checked ~ .contactContent .contactStars .star-4,
+  #star-5:checked ~ .contactContent .contactStars .star-5{
+    color: #fd4;
+  }
+  .contactWrapper .contactFooter{
+    border-top: 1px solid #fd4;
+    /* background: #f2f2f2; */
+    height: 55px;
+    padding: 0 20px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fd4;
+    font-weight: 800;
+  }
+  .contactFooter span{
+    font-size: 17px;
+    background-color: rgba(31, 31, 31,0.5);
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: 400;
+  }
+  .contactFooter .contactClass::before{
+    content: "Rate your experience";
+  }
+  .contactFooter .contactStarsNumber::before{
+    content: "0 out of 5";
+  }
+  #star-1:checked ~ .contactFooter .contactClass::before{
+    content: "I just hate it";
+  }
+  #star-1:checked ~ .contactFooter .contactStarsNumber::before{
+    content: "1 out of 5";
+  }
+  #star-2:checked ~ .contactFooter .contactClass::before{
+    content: "I don't like it";
+  }
+  #star-2:checked ~ .contactFooter .contactStarsNumber::before{
+    content: "2 out of 5";
+  }
+  #star-3:checked ~ .contactFooter .contactClass::before{
+    content: "This is okayish";
+  }
+  #star-3:checked ~ .contactFooter .contactStarsNumber::before{
+    content: "3 out of 5";
+  }
+  #star-4:checked ~ .contactFooter .contactClass::before{
+    content: "Oh, it's pretty good";
+  }
+  #star-4:checked ~ .contactFooter .contactStarsNumber::before{
+    content: "4 out of 5";
+  }
+  #star-5:checked ~ .contactFooter .contactClass::before{
+    content: "I just love it";
+  }
+  #star-5:checked ~ .contactFooter .contactStarsNumber::before{
+    content: "5 out of 5";
+  }
+  input[type="radio"]{
+    display: none;
+  }
+
+  .formContainer form{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction:column;
+  }
+  .formContainer label{
+    margin-top: 10px;
+  }
+  .formContainer form input,.formContainer form textarea{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    width:100%;
+  }
+  .formContainer form textarea{
+    resize:none;
+  }
+
+  .button {
+    margin: auto;
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0.4rem;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button:hover {
+    background-color: #393939;
+    box-shadow: #101010 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+  
+  .button:active {
+    transform: scale(1.025);
+  }
+  
+  @media (min-width: 768px) {
+    .button {
+      font-size: 1rem;
+      padding: .75rem 2rem;
+    }
+  }
+  @media only screen and (max-width:450px) {
+    
+  .contactFooter span {
+    font-size: 13px;
+    padding: 5px 9px;
+  }
+  .contactWrapper .contactStars {
+    margin-top: 15px;
+  }
+  .contactStars label {
+    font-size: 20px;
+  }
+  .contactWrapper .contactContent {
+    padding: 30px;
+    width: 150px;
+  }
+  .contactOuter li img {
+    width: 60%;
+  }
+  .contactOuter .contactEmojis li {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}

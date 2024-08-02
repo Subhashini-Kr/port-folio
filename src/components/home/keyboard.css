@@ -1,0 +1,55 @@
+.keyboard{
+    width:60px;
+    position: -webkit-sticky;
+    position:sticky;
+    right:35px;
+    top: 0;
+    color:white;
+    font-size: 30px;
+}
+.keyboard .keys2{
+    width:65px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+}
+.keyboard .keys2 .keyLetter2{
+    position: relative;
+    background: none;
+    color:#00e1ff;
+    text-shadow: 3px 3px white;
+    opacity: 0;
+}
+.keyboard .keys2 .keyLetter2.rank1{
+    animation: keyAnim 2.1s linear infinite;
+}
+.keyboard .keys2 .keyLetter2.rank2{
+    animation: keyAnim 2.1s linear 0.30s infinite;
+}
+.keyboard .keys2 .keyLetter2.rank3{
+    animation: keyAnim 2.1s linear 0.60s infinite;
+}
+.keyboard .keys2 .keyLetter2.rank4{
+    animation: keyAnim 2.1s linear 0.90s infinite;
+}
+.keyboard .keys2 .keyLetter2.rank5{
+    animation: keyAnim 2.1s linear 1.2s infinite;
+}
+.keyboard .keys2 .keyLetter2.rank6{
+    animation: keyAnim 2.1s linear 1.5s infinite;
+}
+.keyboard .keys2 .keyLetter2.rank7{
+    animation: keyAnim 2.1s linear 1.8s infinite;
+}
+@keyframes keyAnim {
+    0%{
+        opacity: 1;
+    }
+    5%{
+        opacity: 0.5;
+    }
+    40%{
+        opacity: 0;
+        transform: scale(0.5) translate(0,100vh);
+    }
+}

@@ -1,0 +1,368 @@
+@property --progress-value {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+  }
+  @-webkit-keyframes progress0 {
+    to {
+      --progress-value: 0;
+    }
+  }
+  @keyframes progress0 {
+    to {
+      --progress-value: 0;
+    }
+  }
+  @-webkit-keyframes progress10 {
+    to {
+      --progress-value: 10;
+    }
+  }
+  @keyframes progress10 {
+    to {
+      --progress-value: 10;
+    }
+  }
+  @-webkit-keyframes progress20 {
+    to {
+      --progress-value:20 ;
+    }
+  }
+  @keyframes progress20 {
+    to {
+      --progress-value:20 ;
+    }
+  }
+  @-webkit-keyframes progress30 {
+    to {
+      --progress-value:30 ;
+    }
+  }
+  @keyframes progress30 {
+    to {
+      --progress-value:30 ;
+    }
+  }
+  @-webkit-keyframes progress40 {
+    to {
+      --progress-value:40 ;
+    }
+  }
+  @keyframes progress40 {
+    to {
+      --progress-value:40 ;
+    }
+  }
+  @-webkit-keyframes progress50 {
+    to {
+      --progress-value:50 ;
+    }
+  }
+  @keyframes progress50 {
+    to {
+      --progress-value:50 ;
+    }
+  }
+  @-webkit-keyframes progress60 {
+    to {
+      --progress-value:60 ;
+    }
+  }
+  @keyframes progress60 {
+    to {
+      --progress-value:60 ;
+    }
+  }
+  @-webkit-keyframes progress70 {
+    to {
+      --progress-value:70 ;
+    }
+  }
+  @keyframes progress70 {
+    to {
+      --progress-value:70 ;
+    }
+  }
+  @-webkit-keyframes progress80 {
+    to {
+      --progress-value:80 ;
+    }
+  }
+  @keyframes progress80 {
+    to {
+      --progress-value:80 ;
+    }
+  }
+  @-webkit-keyframes progress90 {
+    to {
+      --progress-value:90 ;
+    }
+  }
+  @keyframes progress90 {
+    to {
+      --progress-value:90 ;
+    }
+  }
+  @-webkit-keyframes progress100 {
+    to {
+      --progress-value:100 ;
+    }
+  }
+  @keyframes progress100 {
+    to {
+      --progress-value:100 ;
+    }
+  }
+
+  .progress-bar-container{
+    color: white;
+    margin: 0 2rem;
+  }
+  .progress-bar-container .progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* to center the percentage value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  /* .progress-bar-container .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    position: relative;
+    top: -45%;
+    left: -15%;
+    text-shadow: 2px 2px 2px white;
+    content: counter(percentage) "%";
+  } */
+
+  .progress-bar-container .progress-bar img{
+    max-height: 50px;
+    width: 50px;
+    position: relative;
+    left: -15%;
+  }
+  
+  /*.progress-bar-container .html:hover{
+    text-shadow: 5px 5px 5px white;
+    box-shadow: 2px 2px 2px lightblue;
+  }
+  
+  .progress-bar-container .html {
+    background: radial-gradient(closest-side, blue 79%, transparent 80% 100%), conic-gradient(transparent calc(var(--progress-value) * 1%), blue 0);
+    animation: progress90 2s 1 forwards;
+    transition: all 0.5s;
+    border: 2px solid blue;
+} 
+ .progress-bar-container .html::before {
+    -webkit-animation: progress90 2s 1 forwards;
+    animation: progress90 2s 1 forwards;
+  } */
+  
+  .progress-bar-container h2 {
+    text-align: center;
+    font-size: 1em;
+    text-shadow: 2px 2px 2px gray;
+  }
+  
+
+
+
+
+.orbit-system{
+  margin: 50px 0;
+}
+
+
+.system {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  -webkit-transform: rotateX(75deg) rotateY(-30deg);
+  transform: rotateX(75deg) rotateY(-30deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.planet, .satellite-orbit, .satellite {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.planet {
+  margin-top: -4.5rem;
+  margin-left: -4.5rem;
+  
+  border-radius: 50%;
+  background-color: rgb(0,0,0);
+  color: white;
+  
+  text-align: center;
+  /* line-height: 9rem; */
+  
+  -webkit-transform: rotateY(30deg) rotateX(-75deg);
+  transform: rotateY(30deg) rotateX(-75deg);
+}
+
+.satellite-orbit {
+	width: 12rem;
+    position: absolute;
+    height: 12rem;
+    margin-top: -5rem;
+    margin-left: -2.5rem;
+    border: 3px solid white;
+  border-radius: 50%;
+  
+  -webkit-animation-name: orbit;
+  animation-name: orbit;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite {
+  top: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: -1.25rem;
+  margin-left: 0;
+  
+  color: black;
+  font-weight: 700;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3rem;
+  
+  -webkit-animation-name: invert-orbit;
+  animation-name: invert-orbit;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes orbit {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes orbit {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/*
+In order to invert the rotation, do the rotate* transforms in reverse order.
+
+Here, we rotated the system with rotateX(75deg) rotateY(-30deg), and then we are animating the rotation of the orbit with rotateZ(0-360deg). To reverse that, we need to reverse the last transform applied (rotateZ), then rotateY, then rotateX.
+
+The rotateX/Y reversal is easy since it's not animated, so just use its opposite (30deg, -75deg). The rotateZ is trickier since it's animating, but since it's rotating from 0 to 360, we just need to animate the satellite from 360 to 0.
+*/
+@-webkit-keyframes invert-orbit {
+    0% {
+        transform: rotateZ(360deg) rotateY(30deg) rotateX(-75deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+    }
+}
+@keyframes invert-orbit {
+    0% {
+        transform: rotateZ(360deg) rotateY(30deg) rotateX(-75deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+    }
+}
+
+.system>div{
+  left: 10%;
+}
+
+
+
+
+@media only screen and (max-width:750px){
+  .progress-bar-container .progress-bar {
+    width: 75px;
+    height: 75px;
+  }
+
+  .progress-bar-container .progress-bar img{
+    max-height: 30px;
+    width: 30px;
+  }
+  .satellite-orbit{
+    width: 130px;
+    height: 130px;
+    margin-top: -5rem;
+    margin-left: -1.5rem;
+  }
+  .satellite{
+    width: 2rem;
+  height: 2rem;
+  margin-top: -1rem;
+  }
+  .progress-bar-container {
+    margin: 0 20px;
+}
+.orbit-system {
+  margin: 33px 0;
+}
+}
+@media only screen and (max-width:475px){
+  .progress-bar-container .progress-bar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .progress-bar-container .progress-bar img{
+    max-height: 20px;
+    width: 20px;
+    left: -20%;
+  }
+
+  .satellite-orbit{
+    width: 75px;
+    height: 75px;
+    margin-top: -3rem;
+    margin-left: -0.5rem;
+  }
+
+  .satellite{
+    width: 1rem;
+  height: 1rem;
+  margin-top: -0.5rem;
+  }
+
+  .progress-bar-container {
+    font-size: 0.7em;
+    margin: 0 10px;
+  }
+  .orbit-system {
+    margin: 20px 0;
+}
+}
+
