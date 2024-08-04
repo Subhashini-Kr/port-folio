@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/port-folio/static/css/main.93980844.css",
-    "main.js": "/port-folio/static/js/main.c2f960ef.js",
-    "static/js/787.2e9b76fa.chunk.js": "/port-folio/static/js/787.2e9b76fa.chunk.js",
-    "static/media/contactPic.png": "/port-folio/static/media/contactPic.30e9a83ea09ef37af046.png",
-    "static/media/subbu.png": "/port-folio/static/media/subbu.a8b387aed9db1f258fa8.png",
-    "static/media/stars4.png": "/port-folio/static/media/stars4.2fd03adddb76d31c7580.png",
-    "static/media/stars2.png": "/port-folio/static/media/stars2.71cb0c65a79845cdc1cd.png",
-    "static/media/stars3.png": "/port-folio/static/media/stars3.4b6f7a8bcc67ac3f12b3.png",
-    "static/media/bmrc.png": "/port-folio/static/media/bmrc.a1cf074c4f8b9d61749f.png",
-    "static/media/stars5.png": "/port-folio/static/media/stars5.d0408b0580a7f3559170.png",
-    "static/media/stars1.png": "/port-folio/static/media/stars1.01ec4d847d4e3435e79f.png",
-    "static/media/ohio.png": "/port-folio/static/media/ohio.18dc0648ffe28226b14c.png",
-    "index.html": "/port-folio/index.html",
-    "main.93980844.css.map": "/port-folio/static/css/main.93980844.css.map",
-    "main.c2f960ef.js.map": "/port-folio/static/js/main.c2f960ef.js.map",
-    "787.2e9b76fa.chunk.js.map": "/port-folio/static/js/787.2e9b76fa.chunk.js.map"
+    "main.css": "/pf/static/css/main.8c468cc8.css",
+    "main.js": "/pf/static/js/main.13cddf21.js",
+    "static/js/787.012d3b70.chunk.js": "/pf/static/js/787.012d3b70.chunk.js",
+    "static/media/contactPic.png": "/pf/static/media/contactPic.30e9a83ea09ef37af046.png",
+    "static/media/subbu.png": "/pf/static/media/subbu.a8b387aed9db1f258fa8.png",
+    "static/media/stars4.png": "/pf/static/media/stars4.2fd03adddb76d31c7580.png",
+    "static/media/stars2.png": "/pf/static/media/stars2.71cb0c65a79845cdc1cd.png",
+    "static/media/stars3.png": "/pf/static/media/stars3.4b6f7a8bcc67ac3f12b3.png",
+    "static/media/bmrc.png": "/pf/static/media/bmrc.a1cf074c4f8b9d61749f.png",
+    "static/media/stars5.png": "/pf/static/media/stars5.d0408b0580a7f3559170.png",
+    "static/media/stars1.png": "/pf/static/media/stars1.01ec4d847d4e3435e79f.png",
+    "static/media/ohio.png": "/pf/static/media/ohio.18dc0648ffe28226b14c.png",
+    "index.html": "/pf/index.html",
+    "main.8c468cc8.css.map": "/pf/static/css/main.8c468cc8.css.map",
+    "main.13cddf21.js.map": "/pf/static/js/main.13cddf21.js.map",
+    "787.012d3b70.chunk.js.map": "/pf/static/js/787.012d3b70.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93980844.css",
-    "static/js/main.c2f960ef.js"
+    "static/css/main.8c468cc8.css",
+    "static/js/main.13cddf21.js"
   ]
 }
