@@ -10,6 +10,7 @@ import Beaker from './components/home/beaker';
 import Click from './components/home/click';
 // import Projects from './components/projects';
 import Skills from './components/skills';
+import Flowers from './components/flowers';
 // import Snowfall from './Snowfall';
 // import Stars from './stars';
 
@@ -24,6 +25,11 @@ function App() {
       <Skills/>
       <ContactLinks/>
       <ContactForm/>
+      <div className="flowerOuter">
+        {/* <Flowers /> */}
+        {/* <Flowers /> */}
+        <Flowers />
+      </div>
       {/* <Snowfall /> */}
       {/* <Stars /> */}
     </div>

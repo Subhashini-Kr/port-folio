@@ -1,0 +1,10 @@
+.flowerOuter{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: right;
+    padding: 20px 0 !important;
+    width: 100vw !important;
+    position: fixed;
+    bottom: 0%;
+    right: 90px;
+}
