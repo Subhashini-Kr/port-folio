@@ -35,7 +35,7 @@ function AboutDesc() {
             </p>
             <div className='downloadResume'>
                 <button>
-                    <a href='https://drive.google.com/file/d/1TATayXf1RTiJpFNMTg6IpUXufG8nfxiu/view' target="_blank" rel="noreferrer">
+                    <a href='https://drive.google.com/file/d/1SSADIgk-Efn2TyI9svmHTsIgrX4uMiYa/view?usp=drivesdk' target="_blank" rel="noreferrer">
                         Resume
                     </a>
                 </button>
@@ -44,7 +44,7 @@ function AboutDesc() {
     </div>
     <div className="aboutSliderOuter">
     <div className="aboutSlider">
-        <ContactCard link='https://share.google/TNBuqyjhovsMQ0gGl' site='R.K College of Nursing' points={['B.Sc. Nursing Graduate', '2021-2025', '3x 3-Months Trainee']} />
+        <ContactCard link='https://share.google/TNBuqyjhovsMQ0gGl' site='R.K College of Nursing' points={['B.Sc. Nursing Graduate', '2021-2025', 'Final Score - 79.80%', '3x 3-Months Trainee']} />
         {/* <ContactCard link='https://www.surajkundinternational.com/' site='Surajkund International School' points={['2020 Passout', 'PCB Student' ]} /> */}
     </div></div>
     <div className="aboutSliderOuter">
